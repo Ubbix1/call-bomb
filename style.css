@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Average+Sans&display=swap');
+
+:root {
+    --webkit-color: #fff;
+    background-color: #0F2115;
+    text-shadow: 0px 0px 20px black;
+    font-family: 'Average Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0F2115;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #284C30;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #446746;
+}
+
+::placeholder {
+    color: #446746;
+}
+
+body {
+    color: var(--webkit-color);
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: 101vh;
+    position: relative;
+    z-index: 1;
+}
+
+form, div {
+    position: absolute;
+    z-index: 2;
+    left: 40%;
+    top: 10%;
+}
+
+h1{
+    font-size: 56px;
+    font-weight: 100;
+    animation: minnum 300ms infinite  ease-in;
+}
+
+@keyframes minnum {
+    0% {
+        text-shadow: 0px 0px 20px red;
+    }
+
+    100% {
+        text-shadow: 0px 0px 20px orange;
+    }
+}
+
+p {
+    font-size: x-large;
+}
+
+input {
+    width: 160px;
+    padding: 2%;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+input:focus{
+    outline: none;
+}
+
+.p-small {
+    font-size: small;
+    color: red;
+    font-weight: 600;
+}
+
+input[type="submit"] {
+    width: 171px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background: #446746;
+    transition: 100ms;
+    color: var(--webkit-color);
+}
+
+.h2 {
+    font-size: 50px;
+    position: relative;
+    right: 144px;
+    font-weight: 100;
+}
+
+a {
+    color: white;
+    font-size: large;
+}
+
+a:hover {
+    color: #0F2;
+}
+
+@media only screen and (max-width:500px){
+
+    img {
+        object-fit: cover;
+        object-position: center;
+    }
+
+    form,div {
+        left: 15%;
+    }
+
+    input{
+        width: 180px;
+    }
+
+    input[type="submit"]{
+        width: 192px;
+    }
+
+    .h2 {
+        position: absolute;
+        right: -9px;
+    }
+
+    a{
+        position: relative;
+        top: 202px;
+    }
+}

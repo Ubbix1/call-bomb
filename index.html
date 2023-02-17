@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.png">
+    <title>Call Bomber</title>
+</head>
+<body>
+    <img src="images/bg.jpg" alt="bg-image">
+    <form method="GET" action="second.html">
+        <h1>Call bomber</h1>
+        <p>Enter Number Without +91</p>
+        <input onclick="sliceFunction()" type="tel" name="tel" id="tel" placeholder="Enter number" maxlength="10">
+        <p>How many Times;</p>
+        <input id="threat" type="text" placeholder="threat max-99 " maxlength="2">
+        <p id="msg" class="p-small"></p>
+        <input type="submit" value="Send">
+    </form>
+</body>
+<script src="script.js"></script>
+</html>
